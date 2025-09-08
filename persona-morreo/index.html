@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O personagem morreu?</title>
+    <link rel="stylesheet" href="estilo.css".css">
+</head>
+<body>
+    <header>
+        <h1>O personagem morreu?</h1>
+    </header>
+    <section id="entrada">
+        <p>o personagem morreu?</p>
+        <input id="vida" type="number" name="vida" id="vida" placeholder="Digite a vida do personagem">
+        <br>
+        <br>
+        <input id="dano" type="number" name="dano" id="dano" placeholder="Digite o dano sofrido">
+        <br>
+        <input type="button" value="Calcular" onclick="calcular()">
+    </section>
+    <section id="oculto" style="display:none">
+        <h2>Calculado com suseso!</h2>
+        <h4 id="resultado"></h4>
+        <p>Vida atual do personagem: <span id="vida_calc"></span></p>
+        <p>Dano sofrido pelo personagem: <span id="dano_calc"></span></p>        
+        <br>
+        <input type="button" value="Voltar" onclick="voltar()">
+    </section>
+</body>
+<script src="js.js"></script>
+</html>
